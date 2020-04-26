@@ -13,3 +13,5 @@
     - mammoths start to move verticle
     - colors start to move, verticle then horizontal
     - power up item appears which lets you shoot mega lazer for a sec
+    - mammoths get faster
+- some kind of restart when you lose
