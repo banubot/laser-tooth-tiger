@@ -1,0 +1,15 @@
+
+- Row of color circles as wall behind
+- If the mammoth runs thru ur wall, then color disappears and you
+    can't shoot with it anymore
+- lazer color is randomly chosen from your available circles
+- if mammoth runs into you, you are paralyzed for a sec
+- you can choose your background image by picking one from the top
+    (should this be like a start menu where you pick with 
+    some instructions?) probs
+- score count of the number of mammoths
+- mammoths turn into sparkles when you get them
+- after time:
+    - mammoths start to move verticle
+    - colors start to move, verticle then horizontal
+    - power up item appears which lets you shoot mega lazer for a sec
