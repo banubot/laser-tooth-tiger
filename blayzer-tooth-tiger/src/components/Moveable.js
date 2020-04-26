@@ -50,7 +50,7 @@ class Movable extends React.Component {
     }
 
     setPosition() {
-        if (this.domElem !== undefined) {
+        if (this.domElem !== undefined && this.domElem !== null) {
             this.domElem.style.left = this.x + "px";
             this.domElem.style.top = this.y + "px";
         }

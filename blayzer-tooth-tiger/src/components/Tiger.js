@@ -28,9 +28,6 @@ class Tiger extends Movable {
             this.left();
         } else if (e.code === "ArrowRight") {
             this.right();
-        } else if (e.code === "Enter") {
-            //TODO fire lazer
-            return;
         } else {
             return;
         }
