@@ -2,7 +2,7 @@ import React from 'react';
 import Circle from './Circle';
 
 
-const COUNT = 10;
+const COUNT = 20;
 
 class Gameboard extends React.Component {
     constructor(props) {
