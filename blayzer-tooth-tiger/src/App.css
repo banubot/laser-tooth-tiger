@@ -1,4 +1,7 @@
 .circle {
-  position: absolute;
   border-radius: 50%;
+}
+
+#tiger, .circle {
+  position: absolute;
 }

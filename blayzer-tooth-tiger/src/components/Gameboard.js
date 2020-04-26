@@ -1,21 +1,27 @@
 import React from 'react';
 import Circle from './Circle';
+import Tiger from './Tiger';
 
 
 const COUNT = 20;
+const BASE_V = 5;
 
+/**
+ * main game flow
+ */
 class Gameboard extends React.Component {
     constructor(props) {
         super(props);
         this.circles = []
         this.createCircles();
-    }
+        this.tiger = new Tiger({velocity: BASE_V, count: COUNT});
+       }
 
     render() {
         return (
             <div id="main">
                 {this.circles.map(circle => circle)}
-
+                {this.tiger.render()}
             </div>
         );
     }
@@ -27,9 +33,8 @@ class Gameboard extends React.Component {
         }
     }
 
-    //set colour
     componentDidMount() {
- //       document.getElementById("circle" + this.id).style.backgroundColor = "rgba(" + 
+        this.tiger.componentDidMount();
     }
 }
 export default Gameboard;
