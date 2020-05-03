@@ -5,3 +5,89 @@
 #tiger, .circle, .blayzer {
   position: absolute;
 }
+
+.bkg {
+  display: inline;
+  max-width: 18vw;
+  margin: 0.5vw;
+  position: relative;
+  top: -13vh;
+}
+
+.bkg:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#home {
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+  
+  -webkit-animation: rainbow 90s ease infinite;
+  -z-animation: rainbow 90s ease infinite;
+  -o-animation: rainbow 90s ease infinite;
+    animation: rainbow 90s ease infinite;
+  }
+
+p {
+  position: relative;
+  top: -7vh;
+  font-size: 9vh;
+  font-family: font2;
+}
+
+h1 {
+  font-size: 15vh;
+  font-family: font;
+  line-height: 8vh;
+}
+
+h2 {
+  position: relative;
+  top: -13vh;
+  font-size: 6vh;
+  font-family: font2;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+@font-face {
+    font-family: font;
+    src: url("./static/a.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: font2;
+    src: url("./static/b.ttf") format("opentype");
+}
+
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }

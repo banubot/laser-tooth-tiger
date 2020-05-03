@@ -1,4 +1,3 @@
-import React from 'react';
 import Movable from './Moveable';
 
 /**
@@ -16,7 +15,6 @@ class Colored extends Movable {
      */
     setColor() { 
         if (this.domElem !== null) {
-            console.log("setting hue " + this.hue);
             this.domElem.style.backgroundColor = 
                 "hsl(" + this.hue + ", 100%, 50%";
         }
