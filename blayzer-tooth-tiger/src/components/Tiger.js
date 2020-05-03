@@ -11,6 +11,7 @@ class Tiger extends Movable {
         this.y = this.H / 2;
         this.onKey = this.onKey.bind(this);
         document.addEventListener('keydown', this.onKey); 
+        this.pawzed = false; 
     }
 
     render() {
@@ -19,19 +20,22 @@ class Tiger extends Movable {
         );
     }
 
-    onKey(e) {    
-        if (e.code === "ArrowUp") {
-            this.up();
-        } else if (e.code === "ArrowDown") {
-            this.down();
-        } else if (e.code === "ArrowLeft") {
-            this.left();
-        } else if (e.code === "ArrowRight") {
-            this.right();
-        } else {
-            return;
+    onKey(e) { 
+        //parent will tell when game stopped
+        if (!this.pawzed) {  
+            if (e.code === "ArrowUp") {
+                this.up();
+            } else if (e.code === "ArrowDown") {
+                this.down();
+            } else if (e.code === "ArrowLeft") {
+                this.left();
+            } else if (e.code === "ArrowRight") {
+                this.right();
+            } else {
+                return;
+            }
+            this.setPosition();
         }
-        this.setPosition();
      }
 
     componentDidMount() {
