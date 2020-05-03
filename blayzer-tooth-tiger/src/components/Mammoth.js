@@ -11,11 +11,12 @@ class Mammoth extends Movable {
         this.x = 0;
         this.y = props.y;
         this.id = props.id
+        console.log(this.y)
     }
 
     render() {
         return (
-            <img src="mammoth.png" id={"mammoth" + id} alt="mammoth"/>
+            <img src="mammoth.png" id={"mammoth" + this.id} alt="mammoth" className="mammoth"/>
         );
     }
 

@@ -57,8 +57,10 @@ class Movable extends React.Component {
     }
 
     setSize() {
-        this.domElem.style.width = this.size + "px";
-        this.domElem.style.height = this.size + "px";
+        if (this.domElem !== undefined && this.domElem !== null) {
+            this.domElem.style.width = this.size + "px";
+            this.domElem.style.height = this.size + "px";
+        }
     }
 
     /**

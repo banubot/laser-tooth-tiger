@@ -15,8 +15,9 @@ class Home extends Component {
               <p>
                 Defend your colors from the mammoths!
                 <br/>
-                Spacebar : fire laser,
-                Arrows : move
+                Spacebar - fire laser.
+                Arrows - move.
+                Other keys - pause.
               </p>
               <h2>
                   Click a background to start!
